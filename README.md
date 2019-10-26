@@ -1,4 +1,23 @@
-# ResearchLabWebsite
+# Dr. Duwe Research Lab Website
+
+## Instructions to install on a new computer
+
+# Install Node Version Manager (NVM)
+
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash`
+
+Restart terminal or do 
+
+`source ~/.profile`
+
+## Install Nodejs using NVM
+
+`nvm install 12.13`
+
+## Install angular cli
+
+`npm install -g @angular/cli`
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
 

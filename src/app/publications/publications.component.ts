@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PublicationsComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit() {
+  
+  ngOnInit() {   
   }
 
 }

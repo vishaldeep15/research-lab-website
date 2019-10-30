@@ -11,6 +11,7 @@ import { TeamComponent } from './team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TeachingComponent } from './teaching/teaching.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ResearchComponent,
     PublicationsComponent,
     TeamComponent,
-    NavbarComponent
+    NavbarComponent,
+    TeachingComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,7 @@ import { TeachingComponent } from './teaching/teaching.component';
     PublicationsComponent,
     TeamComponent,
     NavbarComponent,
-    TeachingComponent
+    TeachingComponent,
   ],
   imports: [
     BrowserModule,

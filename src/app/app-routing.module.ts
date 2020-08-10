@@ -6,7 +6,6 @@ import { PublicationsComponent } from './publications/publications.component';
 import { TeamComponent } from './team/team.component';
 import { TeachingComponent } from './teaching/teaching.component';
 
-
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },

@@ -12,6 +12,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TeachingComponent } from './teaching/teaching.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { TeachingComponent } from './teaching/teaching.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCarouselModule.forRoot(),
+    MatSidenavModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

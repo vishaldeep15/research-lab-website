@@ -16,7 +16,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatCarouselModule.forRoot(),
     MatSidenavModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

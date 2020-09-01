@@ -15,6 +15,7 @@ import { TeachingComponent } from './teaching/teaching.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -35,8 +36,8 @@ import { MatIconModule } from '@angular/material/icon';
     FlexLayoutModule,
     MatCarouselModule.forRoot(),
     MatSidenavModule,
-    MatIconModule
-
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

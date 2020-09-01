@@ -1,4 +1,38 @@
-<div>
-    <img id="welcome" src="assets/images/motherboard-unsplash.jpg" alt="">
-    <h1 class="centered">Welcome to Duwe's Lab</h1>
+<div class="homepage" fxLayout="column" fxLayoutAlign="space-between center">
+    <!-- Welcome -->
+    <div class="welcome" fxFlex>
+        <!-- <img id="welcome" src="assets/images/motherboard-unsplash.jpg" alt="Welcome"> -->
+        <h1>Welcome to Duwe's Lab</h1>
+        <p>Making Batteryless Devices a Reality!</p>
+    </div>
+    
+    <h2>Latest News</h2>
+    <!-- Latest News -->
+    <div class="news" fxFlex>
+        <mat-carousel
+            timings="200ms ease-in"
+            [autoplay]="true"
+            interval="5000"
+            color="accent"
+            maxWidth="auto"
+            proportion="20"
+            slides="3"
+            [loop]="true"
+            [hideArrows]="false"
+            [hideIndicators]="false"
+            [useKeyboard]="true"
+            [useMouseWheel]="false"
+            orientation="ltr">
+            <mat-carousel-slide
+                id="slide" 
+                #matCarouselSlide
+                *ngFor="let slide of slides; let i = index"
+                [image]="slide.image"
+                overlayColor="#00000040"
+                [hideOverlay]="false">
+                <h4 id="headline">{{slide.news}}</h4>
+            </mat-carousel-slide>
+        </mat-carousel>
+    </div>
+
 </div>

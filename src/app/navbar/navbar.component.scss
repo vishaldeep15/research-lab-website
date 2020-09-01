@@ -13,3 +13,11 @@ a:hover {
 .active-link {
     border-bottom: 2px solid #F1BE48;
 }
+
+// Fix navbar
+mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}

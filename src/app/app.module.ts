@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
     TeamComponent,
     NavbarComponent,
     TeachingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

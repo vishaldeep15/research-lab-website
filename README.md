@@ -1,8 +1,8 @@
 # Dr. Duwe Research Lab Website
 
-## Instructions to install on ubuntu machine
+# Instructions to install on ubuntu machine
 
-# Install Node Version Manager (NVM)
+## Install Node Version Manager (NVM)
 
 `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash`
 
@@ -20,7 +20,13 @@ This installs Nodejs with Node Package Manager (npm)
 
 `npm install -g @angular/cli`
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0 (updated to version 10).
+
+## Install all packages
+
+`npm install`
+
+This will install all the packages specified in package.json file.
 
 ## Development server
 

@@ -19,6 +19,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { HarcComponent } from './research/harc/harc.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     TeachingComponent,
     FooterComponent,
+    HarcComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { FooterComponent } from './footer/footer.component';
     MatMenuModule,
     MatCardModule,
     HttpClientJsonpModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

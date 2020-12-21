@@ -1,10 +1,30 @@
 <div class="research">
     <h1>Research Projects</h1>
 
-    <h3>HARC (Heterogeneous  Array  of  Redundant  Persistent  Clocks)</h3 >
-    <div fxLayout="column" fxLayoutAlign="space-evenly" >
-        <img id="harc" src="assets/images/harc.png">
-        <p>Batteryless sensing devices powered solely by ambient energy sources are expected to operate in an intermittent manner, since they do not have a predictable, or even continuous, energy supply. When such an intermittent system is powered off, it cannot keep track of time using conventional means. However, a continuous sense of time is critical for any system running real-time or time-sensitive applications. In this paper, we present HARC (Heterogeneous  Array  of  Redundant  Persistent  Clocks), a novel solution to the problem of timekeeping for intermittent  systems. HARC uses a heterogeneous, redundant array of capacitor-based persistent clocks that each decay in parallel, but at different rates, to provide variation-resilient high accuracy over a wide range of power off-times. We demonstrate the feasibility and effectiveness of HARC using experimental evaluations on a HARC prototype, and trace-based simulations of HARC-supported communication directly between two intermittent devices.</p>
-    </div>
-    <hr>
+    <!-- <mat-card class="example-card">
+        <mat-card-title>Heterogeneous  Array  of  Redundant  Persistent  Clocks (HARC)</mat-card-title>
+        <mat-card-content>
+        <p>
+            Batteryless sensing devices powered solely by ambient energy sources are expected to operate in an intermittent manner, since they do not have a predictable, or even continuous, energy supply. When such an intermittent system is powered off, it cannot keep track of time using conventional means. However, a continuous sense of time is critical for any system running real-time or time-sensitive applications. In this paper, we present HARC (Heterogeneous  Array  of  Redundant  Persistent  Clocks), a novel solution to the problem of timekeeping for intermittent  systems. HARC uses a heterogeneous, redundant array of capacitor-based persistent clocks that each decay in parallel, but at different rates, to provide variation-resilient high accuracy over a wide range of power off-times. We demonstrate the feasibility and effectiveness of HARC using experimental evaluations on a HARC prototype, and trace-based simulations of HARC-supported communication directly between two intermittent devices.
+        </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button routerLink="/research/harc">Learn more</button>
+        </mat-card-actions>
+    </mat-card> -->
+
+    <div fxLayout="column wrap" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
+        <mat-card fxFlex="25" class="profile-card" *ngFor="let project of projects" color="accent">
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{project.name}}</mat-card-title>
+            <mat-card-content>
+                <p>{{project.projectDescription}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="accent" routerLink={{project.linkToPage}}>Learn more</button>
+            </mat-card-actions>
+        </mat-card>
+      </div>
+
+    <!-- <router-outlet></router-outlet> -->
 </div>

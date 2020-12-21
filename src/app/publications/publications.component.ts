@@ -17,8 +17,9 @@ import { ZoteroLoadService } from '../services/zotero-load.service';
 export class PublicationsComponent implements OnInit {
   @Input('script') param:  any;
 
-  bibbaseUrl = "https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5803499%2Fcollections%2FYMPLDFF4%2Fitems%3Fkey%3DVc359QTTC22udUa6fDiNoBFz%26format%3Dbibtex%26limit%3D100&jsonp=1";
-
+  // bibbaseUrl = "https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5803499%2Fcollections%2FYMPLDFF4%2Fitems%3Fkey%3DVc359QTTC22udUa6fDiNoBFz%26format%3Dbibtex%26limit%3D100&jsonp=1";
+  bibbaseUrl = "https://bibbase.org/show?bib=https%3A%2F%2Fwww.ece.iastate.edu%2F%7Eduwe%2Fassets%2Fduwe-pubs.bib&jsonp=1"
+  
   bibObject: any;
 
   constructor(

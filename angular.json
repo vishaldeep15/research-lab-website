@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "research-lab-website"
+  "defaultProject": "research-lab-website",
+  "cli": {
+    "analytics": false
+  }
 }

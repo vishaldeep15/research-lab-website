@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TeachingComponent } from './teaching/teaching.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { HarcComponent } from './research/harc/harc.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { TeachingComponent } from './teaching/teaching.component';
     TeamComponent,
     NavbarComponent,
     TeachingComponent,
+    HarcComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

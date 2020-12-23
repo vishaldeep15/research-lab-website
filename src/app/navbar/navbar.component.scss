@@ -11,5 +11,26 @@ a:hover {
 }
 
 .active-link {
-    border-bottom: 2px solid #1DE9B6;
+    border-bottom: 2px solid #F1BE48;
+}
+
+// Fix navbar
+// mat-toolbar {
+//     position: fixed;
+//     position: -webkit-sticky; /* For macOS/iOS Safari */
+//     top: 0; /* Sets the sticky toolbar to be on top */
+//     z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+// }
+
+// Fix navbar
+.header-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%  !important;
+}
+
+.mat-menu-item:hover {
+    background-color: #F1BE48;
 }

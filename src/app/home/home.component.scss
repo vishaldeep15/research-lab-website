@@ -1,0 +1,61 @@
+.welcome {
+    color: black;
+    // margin: auto;
+    width: 100%;
+    // height: 15vh;
+    // top: 50%;
+    // height: 50vh;
+    background-color: #c8102e;
+    align-content: center;
+}
+
+h1 {
+    color: white;
+    top: 8vh;
+    font-size: 7vw;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(139, 134, 134);
+    font-size: 3vw;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.news {
+    width: 100%;
+    height: 60%;
+}
+
+#headline {
+    color: white;
+    text-align: center;   
+    padding: 1em 3em;
+    font-size: 3vw;
+}
+
+#slide {
+    color: white;
+    align-content: center;
+    text-align: center; 
+    margin: auto;
+}
+
+.description {
+    width: 100%;
+    height: 80%;
+    // align-content: center;
+    text-align: center;
+    padding: 3em 0;
+    background-color: rgb(233, 229, 223)    ;
+}
+
+#desc {
+    vertical-align: middle;
+}

@@ -10,8 +10,17 @@ import { PublicationsComponent } from './publications/publications.component';
 import { TeamComponent } from './team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatCardModule } from '@angular/material/card'; 
+import { FlexLayoutModule } from '@angular/flex-layout'; 
+import { TeachingComponent } from './teaching/teaching.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { HarcComponent } from './research/harc/harc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,10 @@ import { MatCardModule } from '@angular/material/card';
     ResearchComponent,
     PublicationsComponent,
     TeamComponent,
-    NavbarComponent
+    NavbarComponent,
+    TeachingComponent,
+    FooterComponent,
+    HarcComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +40,15 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatCarouselModule.forRoot(),
+    MatSidenavModule,
+    MatIconModule,
+    MatMenuModule,
+    MatCardModule,
+    HttpClientJsonpModule,
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

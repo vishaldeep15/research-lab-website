@@ -1,1 +1,37 @@
-<p>team works!</p>
+<div class=container>
+  <div class="professors">
+    <h2>Professors</h2>
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
+      <mat-card fxFlex="25" class="profile-card" *ngFor="let professor of professors" color="accent">
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+          <mat-card-title>{{professor.name}}</mat-card-title>
+          <mat-card-subtitle>{{professor.designation}}</mat-card-subtitle>
+        </mat-card-header> 
+        <img mat-card-image src={{professor.imagePath}} alt="Photo of the Henry Duwe">
+        <mat-card-content>
+          <p>{{professor.profileDescription}} </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    
+    <div class="students">
+      <h2>Graduate Students</h2>
+      <div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
+        <mat-card fxFlex="25" class="profile-card" *ngFor="let geadStudent of gradStudents" color="accent">
+          <mat-card-header>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{geadStudent.name}}</mat-card-title>
+            <mat-card-subtitle>{{geadStudent.designation}}</mat-card-subtitle>
+          </mat-card-header> 
+          <img mat-card-image src={{geadStudent.imagePath}} alt="Photo of the Graduate Student">
+          <mat-card-content>
+            <p>{{geadStudent.profileDescription}} </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <h2>Undergraduate Students</h2>
+      <h2>Alumni</h2>
+    </div>
+</div>

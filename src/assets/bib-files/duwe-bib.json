@@ -1,0 +1,577 @@
+{
+ "metadata": {
+  "collection": "duwe-pubs",
+  "source": "duwe-pubs.bib",
+  "created": "2020-12-24T03:07:16.487918",
+  "records": 24
+ },
+ "records": [
+  {
+   "type": "inproceedings",
+   "id": "dynamicTARDIS",
+   "citekey": "dynamicTARDIS",
+   "collection": "duwe-pubs",
+   "title": "Revisiting Time Remanence Clocks for Energy Harvesting Wireless Sensor Nodes",
+   "year": "2019",
+   "booktitle": "ENSsys '19: Internactional Workshop on Energy Harvesting & Energy-Neutral Sensing Systems",
+   "month": "November",
+   "author": [
+    {
+     "name": "Deep, Vishal"
+    },
+    {
+     "name": "Mishra, Aditi"
+    },
+    {
+     "name": "Qiao, Daji"
+    },
+    {
+     "name": "Duwe, Henry"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "cynapse",
+   "citekey": "cynapse",
+   "collection": "duwe-pubs",
+   "title": "An Adaptive Memory Management Strategy Towards Energy Efficient Machine Inference in Event-Driven Neuromorphic Accelerators",
+   "year": "2019",
+   "booktitle": "2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP)",
+   "volume": "2160",
+   "organization": "IEEE",
+   "pages": "197--205",
+   "author": [
+    {
+     "name": "Saha, Saunak"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Zambreno, Joseph"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "sbglift",
+   "citekey": "sbglift",
+   "collection": "duwe-pubs",
+   "title": "Software-based Gate-level Information Flow Security for IoT Systems",
+   "year": "2017",
+   "booktitle": "50th IEEE/ACM International Symposium on Microarchitecture (MICRO)",
+   "month": "October",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe*, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "bespoke",
+   "citekey": "bespoke",
+   "collection": "duwe-pubs",
+   "title": "Bespoke Processors for Applications with Ultra-low Area and Power Constraints",
+   "year": "2017",
+   "booktitle": "44th ACM/IEEE International Symposium on Computer Architecture (ISCA)",
+   "note": "\\textbfIEEE Micro Top Picks 2018",
+   "month": "June",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe*, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "peakPower",
+   "citekey": "peakPower",
+   "collection": "duwe-pubs",
+   "title": "Determining Application-specific Peak Power and Energy Requirements for Ultra-low-power Processors",
+   "year": "2017",
+   "booktitle": "22nd ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
+   "note": "\\textbfBest Paper Award.",
+   "month": "April",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe*, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "powerGating",
+   "citekey": "powerGating",
+   "collection": "duwe-pubs",
+   "title": "Enabling Effective Module-oblivious Power Gating for Embedded Processors",
+   "year": "2017",
+   "booktitle": "23rd IEEE International Symposium on High Performance Computer Architecture (HPCA)",
+   "month": "February",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe*, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "ept",
+   "citekey": "ept",
+   "collection": "duwe-pubs",
+   "title": "Rescuing Uncorrectable Fault Patterns in On-chip Memories through Error Pattern Transformation",
+   "year": "2016",
+   "booktitle": "43rd ACM/IEEE International Symposium on Computer Architecture (ISCA)",
+   "month": "June",
+   "author": [
+    {
+     "name": "Duwe, H."
+    },
+    {
+     "name": "Jian, X."
+    },
+    {
+     "name": "Petrisko**, D."
+    },
+    {
+     "name": "Kumar, R."
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "selseUnified",
+   "citekey": "selseUnified",
+   "collection": "duwe-pubs",
+   "title": "A Unified Framework for Error Correction in On-Chip Memories",
+   "year": "2016",
+   "booktitle": "Silicon Errors in Logic--System Effects (SELSE)",
+   "note": "\\textbfBest of SELSE 2016.",
+   "month": "March",
+   "author": [
+    {
+     "name": "Sala, Frederic"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Dolecek, Lara"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "scalableAppSpecific",
+   "citekey": "scalableAppSpecific",
+   "collection": "duwe-pubs",
+   "title": "A Scalable Approach to Application-Specific Software-Hardware Analysis using Symbolic Simulation",
+   "year": "2017",
+   "booktitle": "Desgin, Automation, and Test in Europe (DATE)",
+   "month": "March",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Sartori, John"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "bitserialISA",
+   "citekey": "bitserialISA",
+   "collection": "duwe-pubs",
+   "title": "Exploring ISA Dependence of Bit Serializability for Ultra Low Power Microprocessors",
+   "year": "2017",
+   "booktitle": "Desgin, Automation, and Test in Europe (DATE)",
+   "month": "March",
+   "author": [
+    {
+     "name": "Tomei, Matthew"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Lai, Liangzhen"
+    },
+    {
+     "name": "Chandra, Vikas"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "vilim2016approximate",
+   "citekey": "vilim2016approximate",
+   "collection": "duwe-pubs",
+   "title": "Approximate bitcoin mining",
+   "year": "2016",
+   "booktitle": "53rd ACM Design Automation Conference (DAC)",
+   "author": [
+    {
+     "name": "Vilim**, Matthew"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "Tomei:2016:BSM:2934583.2934597",
+   "citekey": "Tomei:2016:BSM:2934583.2934597",
+   "collection": "duwe-pubs",
+   "title": "Bit Serializing a Microprocessor for Ultra-low-power",
+   "year": "2016",
+   "booktitle": "ACM International Symposium on Low Power Electronics and Design (ISLPED)",
+   "author": [
+    {
+     "name": "Tomei*, Matthew"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Kim, Nam Sung"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "duwe2015correction",
+   "citekey": "duwe2015correction",
+   "collection": "duwe-pubs",
+   "title": "Correction Prediction: Reducing Error Correction Latency for On-chip Memories",
+   "year": "2015",
+   "booktitle": "21st IEEE International Symposium on High Performance Computer Architecture (HPCA)",
+   "month": "Feb",
+   "author": [
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Jian, Xun"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "sinclair2011porting",
+   "citekey": "sinclair2011porting",
+   "collection": "duwe-pubs",
+   "title": "Porting CMP benchmarks to GPUs",
+   "year": "2011",
+   "author": [
+    {
+     "name": "Sinclair, Matthew"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Sankaralingam, Karthikeyan"
+    }
+   ]
+  },
+  {
+   "type": "phdthesis",
+   "id": "duwe2017dependable",
+   "citekey": "duwe2017dependable",
+   "collection": "duwe-pubs",
+   "title": "Dependable Design for Low-Cost Ultra-Low-Power Processors",
+   "year": "2017",
+   "author": [
+    {
+     "name": "Duwe, Henry"
+    }
+   ]
+  },
+  {
+   "type": "mastersthesis",
+   "id": "duwe2013exploiting",
+   "citekey": "duwe2013exploiting",
+   "collection": "duwe-pubs",
+   "title": "Exploiting Application Level Error Resilience via Deferred Execution",
+   "year": "2013",
+   "author": [
+    {
+     "name": "Duwe, Henry"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "bespokeTopPicks",
+   "citekey": "bespokeTopPicks",
+   "collection": "duwe-pubs",
+   "title": "Bespoke Processors for Applications with Ultra-Low Area and Power Constraints",
+   "year": "2018",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ],
+   "journal": {
+    "name": "IEEE Micro",
+    "volume": "38",
+    "number": "3",
+    "pages": "32--39"
+   }
+  },
+  {
+   "type": "article",
+   "id": "peakPowerTOCS",
+   "citekey": "peakPowerTOCS",
+   "collection": "duwe-pubs",
+   "title": "Determining Application-Specific Peak Power and Energy Requirements for Ultra-Low-Power Processors",
+   "author": [
+    {
+     "name": "Cherupalli, Hari"
+    },
+    {
+     "name": "Duwe*, Henry"
+    },
+    {
+     "name": "Ye, Weidong"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Sartori, John"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "deka2013robustifying",
+   "citekey": "deka2013robustifying",
+   "collection": "duwe-pubs",
+   "title": "On Robustifying Applications by Casting Them as Markov Chain Algorithms",
+   "year": "2013",
+   "booktitle": "Asilomar Conference on Signals, Systems and Computers",
+   "author": [
+    {
+     "name": "Deka, Biblap"
+    },
+    {
+     "name": "Birklykke, Alex Aaen"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "deka2014markov",
+   "citekey": "deka2014markov",
+   "collection": "duwe-pubs",
+   "title": "Markov Chain Algorithms: a Template for Building Future Robust Low-Power Systems",
+   "year": "2014",
+   "note": "\\textbfInvited paper",
+   "author": [
+    {
+     "name": "Deka, Biplab"
+    },
+    {
+     "name": "Birklykke, Alex A"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Mansinghka, Vikash K"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "inproceedings",
+   "id": "jian2013low",
+   "citekey": "jian2013low",
+   "collection": "duwe-pubs",
+   "title": "Low-Power, Low-Storage-Overhead Chipkill Correct via Multi-Line Error Correction",
+   "year": "2013",
+   "booktitle": "26th ACM/IEEE Supercomputing Conference (SC)",
+   "author": [
+    {
+     "name": "Jian, Xun"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Sartori, John"
+    },
+    {
+     "name": "Sridharan, Vilas"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "cong2014better",
+   "citekey": "cong2014better",
+   "collection": "duwe-pubs",
+   "title": "Better-than-worst-case Design: Progress and Opportunities",
+   "year": "2014",
+   "note": "\\textbfInvited paper",
+   "author": [
+    {
+     "name": "Cong, Jason"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    },
+    {
+     "name": "Li, Sen"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "jian2013high",
+   "citekey": "jian2013high",
+   "collection": "duwe-pubs",
+   "title": "High Performance, Energy Efficient Chipkill Correct Memory with Multidimensional Parity",
+   "year": "2013",
+   "note": "\\textbfBest of IEEE Computer Architecture Letters.",
+   "author": [
+    {
+     "name": "Jian, Xun"
+    },
+    {
+     "name": "Sartori, John"
+    },
+    {
+     "name": "Duwe, Henry"
+    },
+    {
+     "name": "Kumar, Rakesh"
+    }
+   ]
+  },
+  {
+   "type": "article",
+   "id": "farmahini2013modular",
+   "citekey": "farmahini2013modular",
+   "collection": "duwe-pubs",
+   "title": "Modular Design of High-Throughput, Low-Latency Sorting Units",
+   "year": "2013",
+   "author": [
+    {
+     "name": "Farmahini-Farahani, Amin"
+    },
+    {
+     "name": "Duwe III, Henry J"
+    },
+    {
+     "name": "Schulte, Michael J"
+    },
+    {
+     "name": "Compton, Katherine"
+    }
+   ]
+  }
+ ]
+}

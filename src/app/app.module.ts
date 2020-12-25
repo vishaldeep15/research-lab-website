@@ -21,6 +21,7 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import { HarcComponent } from './research/harc/harc.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { HarcComponent } from './research/harc/harc.component';
     MatCardModule,
     HttpClientJsonpModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

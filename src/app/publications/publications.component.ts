@@ -1,6 +1,7 @@
-import { Component, OnInit, Renderer2, Inject, Directive, Input } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject, Directive, Input, ViewChild, AfterViewInit } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-// import { MatTableDataSource, MatSort, MatPaginator} from '@angular/material';
 import  *  as  data  from  '../../assets/bib-files/duwe-bib.json';
 
 @Component({
@@ -8,20 +9,28 @@ import  *  as  data  from  '../../assets/bib-files/duwe-bib.json';
   templateUrl: './publications.component.html',
   styleUrls: ['./publications.component.scss']
 })
-export class PublicationsComponent implements OnInit {
-  constructor() {}
-
+export class PublicationsComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<any>();
   displayedColumns: string[] = ['title', 'year'];
+
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  public doFilter = (value: string) => {
+    this.dataSource.filter = value.trim().toLocaleLowerCase();
+  }
+
+  constructor() {}
   
   ngOnInit() {   
     // console.log(data["records"][0]);
     this.dataSource.data = data["records"];
-
-    console.log(this.dataSource.data);
-    console.log(this.dataSource.data[0]);
-    console.log(this.dataSource.data[1]);
-
-
   }
+
+  ngAfterViewInit(): void {
+    this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
+  }
+ 
+
 }

@@ -1,54 +1,39 @@
-
-<!-- <div class="bib-frame" fxLayout="column" fxLayoutAlign="space-between center">
-    <h1>Publications</h1>
-
-    <div id="target">
-        <!-- <iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5803499%2Fcollections%2FYMPLDFF4%2Fitems%3Fkey%3DcI4cTF8jlXC4irFMwJ6RUrtR%26format%3Dbibtex%26limit%3D100" frameBorder="0"></iframe>  -->
-        <!-- <iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fwww.ece.iastate.edu%2F%7Eduwe%2Fassets%2Fduwe-pubs.bib" frameBorder="0"></iframe>
-
-    </div>
-    <!-- <div *ngFor="let bib of bibData">
-        {{bib.data.title}}
-    </div> -->
-    
-<!-- </div> -->
-
 <div class="bib-frame" fxLayout="column" fxLayoutAlign="space-between center">
-<h1>Publications</h1>
+  <h1>Publications</h1>
 
-<table mat-table [dataSource]="dataSource">
+  <mat-form-field>
+    <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
 
-      <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef><h2>Title</h2></th>
-        <td mat-cell *matCellDef="let element">  <b>{{element.title}}</b>
-          <br>
-          <ng-container *ngFor="let auth of element.author">
-            {{auth.name}};
-          </ng-container>
-          <br>
-          <ng-container>
-            in <em>{{ element.booktitle}}</em>
-          </ng-container>
-          
-        </td>
-      </ng-container>
-    
-      <!-- Weight Column -->
-      <ng-container matColumnDef="year">
-        <th mat-header-cell *matHeaderCellDef> <h2>Year</h2> </th>
-        <td mat-cell *matCellDef="let element"> {{element.year}} </td>
-      </ng-container>
-    
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    
+  <table mat-table [dataSource]="dataSource" matSort>
 
-    </table>
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header><h2>Title</h2></th>
+      <td mat-cell *matCellDef="let element">  <b>{{element.title}}</b>
+        <br>
+        <ng-container *ngFor="let auth of element.author">
+          {{auth.name}};
+        </ng-container>
+        <br>
+        <ng-container>
+          in <em>{{ element.booktitle}}</em>
+        </ng-container>
+      </td>
+    </ng-container>
+      
+    <!-- Year Column -->
+    <ng-container matColumnDef="year">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <h2>Year</h2> </th>
+      <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>    
 
-  </div>
-<!-- <app-publications></app-publications> -->
-<!-- <head appLoadScript  [script]="'https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5803499%2Fcollections%2FYMPLDFF4%2Fitems%3Fkey%3DVc359QTTC22udUa6fDiNoBFz%26format%3Dbibtex%26limit%3D100&jsonp=1'">
-</head> -->
-
-<!-- <embed src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5803499%2Fcollections%2FYMPLDFF4%2Fitems%3Fkey%3DVc359QTTC22udUa6fDiNoBFz%26format%3Dbibtex%26limit%3D100&jsonp=1" type="text/javascript"> -->
-
+  </table>
+  <mat-paginator [length]="1"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+</div>

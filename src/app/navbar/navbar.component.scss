@@ -33,4 +33,9 @@ a:hover {
 
 .mat-menu-item:hover {
     background-color: #F1BE48;
+    // background-color: #0f0d08;
+}
+
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+    color: #F1BE48;
 }

@@ -10,14 +10,14 @@
     <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef mat-sort-header><h2>Title</h2></th>
-      <td mat-cell *matCellDef="let element">  <b>{{element.title}}</b>
+      <td mat-cell *matCellDef="let element" (click)="openDialog(element)">  <b>{{element.title}}</b>
         <br>
         <ng-container *ngFor="let auth of element.author">
           {{auth.name}};
         </ng-container>
         <br>
         <ng-container>
-          in <em>{{ element.booktitle}}</em>
+          <em>{{ element.booktitle}}</em>
         </ng-container>
       </td>
     </ng-container>

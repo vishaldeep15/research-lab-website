@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ResearchComponent } from './research/research.component';
-import { PublicationsComponent } from './publications/publications.component';
+import { DialogContent, PublicationsComponent } from './publications/publications.component';
 import { TeamComponent } from './team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
@@ -26,6 +26,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     TeachingComponent,
     FooterComponent,
     HarcComponent,
+    DialogContent
   ],
   imports: [
     BrowserModule,
@@ -58,9 +61,15 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDialogModule
   ],
-  providers: [],
+  entryComponents: [
+    DialogContent
+  ],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: true}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

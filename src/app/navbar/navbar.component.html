@@ -1,12 +1,37 @@
-<mat-toolbar color="primary">  
-    <div fxFlex fxLayout fxLayoutGap="10px">
+<div>
+  <mat-toolbar class="header-toolbar" color="primary">  
+    <div fxFlex fxLayout fxLayoutGap="10px" fxShow="true" fxHide.lt-md="true">
       <a routerLink="/home" routerLinkActive="active-link">Home</a>
       <a routerLink="/research" routerLinkActive="active-link">Research</a>
       <a routerLink="/teaching" routerLinkActive="active-link">Teaching</a>
     </div>
 
-    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxLayoutGap="10px">
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxLayoutGap="10px" fxShow="true" fxHide.lt-md="true">
       <a routerLink="/publications" routerLinkActive="active-link">Publications</a>
       <a routerLink="/team" routerLinkActive="active-link">Team</a>
     </div>
-</mat-toolbar>
+
+    <a mat-button color="primary" fxShow="true" fxHide.gt-sm="true" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </a>
+  </mat-toolbar>
+
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item color="primary" routerLink="/home">
+      <span>Home</span>
+    </button>
+    <button mat-menu-item color="primary" routerLink="/research">
+      <span>Research</span>
+    </button>
+    <button mat-menu-item color="primary" routerLink="/teaching">
+      <span>Teaching</span>
+    </button>
+    <button mat-menu-item color="primary" routerLink="/publications">
+      <span>Publications</span>
+    </button>
+    <button mat-menu-item color="primary" routerLink="/team">
+      <span>Team</span>
+    </button>
+  </mat-menu>
+</div>

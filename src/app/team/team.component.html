@@ -1,21 +1,37 @@
 <div class=container>
-    <div class="advisor">
-        <h2>Advisor</h2>
-        <div fxLayout="row" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
-            <img src="../../assets/images/henry_headshot.jpg" alt="">
-            <div class="profile">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat scelerisque vestibulum. Curabitur molestie nec enim eu pretium. Suspendisse aliquam ipsum id nisi interdum, eu eleifend magna viverra. Vivamus justo urna, pulvinar non urna quis, efficitur fermentum magna. Vivamus sed feugiat enim, nec sodales est. Maecenas vitae erat eu quam vehicula fringilla. Morbi nec turpis vel augue vestibulum dictum eget vel urna. Aenean egestas mauris tincidunt risus commodo feugiat. Donec convallis viverra imperdiet. Vestibulum lectus purus, vulputate eget lorem quis, malesuada ullamcorper lectus. In hac habitasse platea dictumst. Quisque rutrum ullamcorper nulla, in mollis dolor lobortis tempus. 
-            </div>
-        </div>
+  <div class="professors">
+    <h2>Professors</h2>
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
+      <mat-card fxFlex="25" class="profile-card" *ngFor="let professor of professors" color="accent">
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+          <mat-card-title>{{professor.name}}</mat-card-title>
+          <mat-card-subtitle>{{professor.designation}}</mat-card-subtitle>
+        </mat-card-header> 
+        <img mat-card-image src={{professor.imagePath}} alt="Photo of the Henry Duwe">
+        <mat-card-content>
+          <p>{{professor.profileDescription}} </p>
+        </mat-card-content>
+      </mat-card>
     </div>
+    
     <div class="students">
-        <h2>Graduate Students</h2>
-        <h2>Undergraduate Students</h2>
-        <h2>Alumni</h2>
+      <h2>Graduate Students</h2>
+      <div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap="2%">
+        <mat-card fxFlex="25" class="profile-card" *ngFor="let geadStudent of gradStudents" color="accent">
+          <mat-card-header>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{geadStudent.name}}</mat-card-title>
+            <mat-card-subtitle>{{geadStudent.designation}}</mat-card-subtitle>
+          </mat-card-header> 
+          <img mat-card-image src={{geadStudent.imagePath}} alt="Photo of the Graduate Student">
+          <mat-card-content>
+            <p>{{geadStudent.profileDescription}} </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <h2>Undergraduate Students</h2>
+      <h2>Alumni</h2>
     </div>
 </div>
-
-
-
-
-

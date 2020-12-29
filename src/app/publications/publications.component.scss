@@ -1,6 +1,48 @@
-iframe {
+// iframe {
+//     width: 90%;
+//     // height: 100%;
+//     margin: 2%;
+//     overflow:auto;
+//     // height:auto;
+//     // display:block;
+// height: max-content;
+
+// }
+
+// #bibIframe {
+//     width: 90%;
+//     height: 100%;
+//     height: max-content;
+// }
+
+// .bib-frame {
+//     width: 90%;
+//     // height: max-content;
+// }
+
+#target { 
+    width: 80%; 
+    height: 80em; 
+    overflow-y: auto; 
+    overflow-x: auto; 
+    resize: both; 
+    position: relative; 
+    z-index: 2; 
+} 
+  
+iframe { 
+    width: 95%; 
+    height: 100%; 
+    border: none; 
+} 
+
+table {
     width: 90%;
-    height: 100%;
-    margin: 2%;
-    display:block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    // min-width: 500px;
+}
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
 }

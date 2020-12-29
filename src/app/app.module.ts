@@ -6,12 +6,28 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ResearchComponent } from './research/research.component';
-import { PublicationsComponent } from './publications/publications.component';
+import { DialogContent, PublicationsComponent } from './publications/publications.component';
 import { TeamComponent } from './team/team.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout'; 
 import { TeachingComponent } from './teaching/teaching.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { HarcComponent } from './research/harc/harc.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -21,16 +37,39 @@ import { TeachingComponent } from './teaching/teaching.component';
     PublicationsComponent,
     TeamComponent,
     NavbarComponent,
-    TeachingComponent
+    TeachingComponent,
+    FooterComponent,
+    HarcComponent,
+    DialogContent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    MatCarouselModule.forRoot(),
+    MatSidenavModule,
+    MatIconModule,
+    MatMenuModule,
+    MatCardModule,
+    HttpClientJsonpModule,
+    HttpClientModule,
+    MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatDialogModule
   ],
-  providers: [],
+  entryComponents: [
+    DialogContent
+  ],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: true}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,13 +1,15 @@
 <h1 mat-dialog-title>Cite</h1>
-<div mat-dialog-content let data>
-    {{pubType}} <br>
-    {{pubTitle}} <br>
-    {{pubAuthor}} <br>
-    {{pubBooktitle}} <br>
-    {{pubYear}} <br>
+<div mat-dialog-content>
+    {{pubType}} 
+    <p class="tab">
+      {{pubTitle}} <br>
+      {{pubAuthor}} <br>
+      {{pubBooktitle}} <br>
+      {{pubYear}} <br>
+    </p>
 </div>
 <div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button color="accent" mat-dialog-close>Close</button>
 </div>
 
 

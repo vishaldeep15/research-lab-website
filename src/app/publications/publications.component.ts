@@ -4,7 +4,9 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
-import  *  as  data  from  '../../assets/bib-files/duwe-bib.json';
+// import  *  as  data  from  '../../assets/bib-files/duwe-bib.json';
+import  *  as  data  from  '../../assets/bib-files/duwe-lab-pubs.json';
+
 
 @Component({
   selector: 'app-publications',
@@ -13,7 +15,7 @@ import  *  as  data  from  '../../assets/bib-files/duwe-bib.json';
 })
 export class PublicationsComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<any>();
-  displayedColumns: string[] = ['title', 'year'];
+  displayedColumns: string[] = ['position', 'title', 'year', 'cite', 'slides', 'video', 'repo'];
   public bibEntry = new BibEntry();
 
   @ViewChild(MatSort) sort: MatSort;
@@ -28,8 +30,8 @@ export class PublicationsComponent implements OnInit, AfterViewInit {
   ) {}
   
   ngOnInit() {   
-    // console.log(data["records"][0]);
     this.dataSource.data = data["records"];
+    console.log(this.dataSource.data);
   }
 
   ngAfterViewInit(): void {
@@ -37,8 +39,11 @@ export class PublicationsComponent implements OnInit, AfterViewInit {
     this.dataSource.paginator = this.paginator;
   }
 
+  openPdf(element) {
+    window.open(element.pdf, '_blank', '', true);
+  }
+
   openDialog(element) {
-    // console.log(element.type);
     this.bibEntry.type = element.type;
     this.bibEntry.key = element.citekey;
     this.bibEntry.title = element.title;
@@ -72,6 +77,7 @@ export class PublicationsComponent implements OnInit, AfterViewInit {
 @Component({
   selector: 'dialog-content',
   templateUrl: 'dialog-content.html',
+  styleUrls: ['./dialog-content.scss']
 })
 export class DialogContent implements OnInit {
   citeText: String;
@@ -87,11 +93,6 @@ export class DialogContent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: BibEntry) {}
 
   ngOnInit() {
-    console.log(this.data.author.length);
-    
-    // for (let author of this.data.author){
-    //   this.authorList += author.name + " and "; 
-    // }
     for (let i=0; i<this.data.author.length; i++){
       this.authorList += this.data.author[i].name 
       if (i< this.data.author.length-1) {
@@ -99,9 +100,7 @@ export class DialogContent implements OnInit {
       }
       
     }
-    console.log(this.authorList);
-
-
+    // console.log(this.authorList);
     this.pubType = "@" + this.data.type + "{"  + this.data.key + ",";
     this.pubTitle = "  title={" + this.data.title +"},";
     this.pubAuthor = "  author=" + this.authorList + "},";
@@ -111,15 +110,7 @@ export class DialogContent implements OnInit {
       this.pubBooktitle =  "  booktitle={" + this.data.booktitle + "},";
     }
     this.pubYear = "  year={" +  this.data.year + "}}";
-    // this.citeText = "@" + this.data.entry.type + "{" + this.data.entry.key + "," +
-    // "title={" + this.data.entry.title +"}," + "author=" + this.data.entry.author.name + "}," +
-    // "booktitle={" + this.data.entry.booktitle + "}," + "year={" +  this.data.entry.year + "}}";
-    // console.log(this.citeText);
   }
-
-  // onNoClick(): void {
-  //   this.dialogRef.close();
-  // }
 }
 
 export class BibEntry {
@@ -131,11 +122,3 @@ export class BibEntry {
   pages: String;
   year: Number
 }
-
-// @inproceedings{deep2019revisiting,
-    //   title={Revisiting Time Remanence Clocks for Energy Harvesting Wireless Sensor Nodes},
-    //   author={Deep, Vishal and Mishra, Aditi and Qiao, Daji and Duwe, Henry},
-    //   booktitle={Proceedings of the 7th International Workshop on Energy Harvesting \& Energy-Neutral Sensing Systems},
-    //   pages={58--59},
-    //   year={2019}
-    // }

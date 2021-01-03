@@ -40,6 +40,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Deploy
+
+Connect to ISU VPN.
+Run `sudo mkdir -p /Volumes/DuweWebsite`.
+Run `sudo mount_smbfs //duwe@myfiles.iastate.edu/engr/sites/home/duwe /Volumes/DuweWebsite/`.
+Run `cp -rf dist/research-lab-website/* /Volumes/DuweWebsite/`.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

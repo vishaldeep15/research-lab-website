@@ -28,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
     TeachingComponent,
     FooterComponent,
     HarcComponent,
-    DialogContent
+    DialogContent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

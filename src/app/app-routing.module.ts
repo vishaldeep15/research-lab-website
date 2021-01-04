@@ -6,6 +6,7 @@ import { PublicationsComponent } from './publications/publications.component';
 import { TeamComponent } from './team/team.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { HarcComponent } from './research/harc/harc.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'research/harc', component: HarcComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: 'team', component: TeamComponent },
-  { path: 'teaching', component: TeachingComponent }
+  { path: 'teaching', component: TeachingComponent },
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({

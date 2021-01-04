@@ -14,7 +14,7 @@
    "title": "HARC: A Heterogeneous Array of RedundantPersistent Clocks for Batteryless,Intermittently-Powered Systems",
    "year": "2020",
    "booktitle": "The IEEE Real-Time Systems Symposium (RTSS)",
-   "slides": "",
+   "slides": "assets/pdfs/deep2020harc_slides.pdf",
    "video": "",
    "repo": "",
    "pdf": "assets/pdfs/deep2020harc.pdf",

@@ -47,6 +47,14 @@ export class PublicationsComponent implements OnInit, AfterViewInit {
     window.open(element.slides, '_blank', '', true);
   }
 
+  openVideo(element) {
+    window.open(element.video, '_blank', '', true);
+  }
+
+  openRepo(element) {
+    window.open(element.repo, '_blank', '', true);
+  }
+
   openDialog(element) {
     this.bibEntry.type = element.type;
     this.bibEntry.key = element.citekey;
